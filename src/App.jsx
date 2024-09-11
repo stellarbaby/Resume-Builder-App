@@ -9,12 +9,16 @@ import Skills from './ResumeApp/Skills'
 import Dashboard from './ResumeApp/Dashboard'
 import NotFound from './ResumeApp/NotFound'
 import About from './ResumeApp/About'
+import BackgroundWrapper from './ResumeApp/Background'
 
 function App() {
+
+
  
   return (
   
 <BrowserRouter>
+<BackgroundWrapper>
   <Routes>
       <Route path='/' element={<LandingPage />}></Route>
       <Route path='/education' element={<Education />}></Route>
@@ -25,6 +29,7 @@ function App() {
       <Route path='/about' element={<About />}></Route>
       <Route path='*' element={<NotFound />}></Route>  
   </Routes>
+  </BackgroundWrapper>
 </BrowserRouter>
 
   )
