@@ -45,7 +45,7 @@ const Personal = () => {
         </button>
       </div>
 
-      <div className='pl-4 sm:pl-14 pt-2 sm:pt-14'>
+      <div className='pl-4 sm:pl-14 pt-2 sm:pt-24'>
         <h1 className='font-Ubuntu text-2xl sm:text-5xl font-bold'>COMPLETE YOUR RESUME HEADING</h1>
         <h2 className='font-Ubuntu text-1xl sm:text-4xl font-bold'>
           Employers will use this information to contact you.
