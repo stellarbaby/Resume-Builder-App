@@ -19,7 +19,7 @@ const Dashboard = () => {
             <Outlet> </Outlet>
         </div>
 
-      <div className='font-bold bg-gradient-to-r from-[#ede2db] via-white to-[#baf1e9] text-white h-[1450px] sm:h-[600px] w-[400px] sm:w-[1200px]'>
+      <div className='font-bold text-white h-[1450px] sm:h-[600px] w-[400px] sm:w-[1200px]'>
             
           <div className='text-center'>
         <h1 className='font-Ubuntu bg-[#0a4447] mt-4 sm:py-4 text-2xl sm:text-5xl inline-block text-transparent bg-clip-text'>Building a perfect resume has never been this easy!</h1>

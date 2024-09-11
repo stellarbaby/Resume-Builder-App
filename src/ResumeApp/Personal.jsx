@@ -38,15 +38,15 @@ const Personal = () => {
   };
 
   return (
-    <div className='bg-gradient-to-r from-cyan-900 via-[#496267] to-[#0a4447] text-white h-[620px] w-[350px] sm:w-[1200px]'>
+    <div className='text-[#0a4447] font-bold h-[620px] w-[350px] sm:w-[1200px]'>
       <div>
         <button className='pl-4' onClick={() => navigate('/dashboard')}>
           DASHBOARD
         </button>
       </div>
 
-      <div className='pl-4 sm:pl-14 sm:pt-10'>
-        <h1 className='font-Ubuntu text-1xl sm:text-5xl font-bold'>COMPLETE YOUR RESUME HEADING</h1>
+      <div className='pl-4 sm:pl-14 pt-2 sm:pt-14'>
+        <h1 className='font-Ubuntu text-2xl sm:text-5xl font-bold'>COMPLETE YOUR RESUME HEADING</h1>
         <h2 className='font-Ubuntu text-1xl sm:text-4xl font-bold'>
           Employers will use this information to contact you.
         </h2>
@@ -72,7 +72,7 @@ const Personal = () => {
               <div>
               <input
                 className='text-[#0a4447] w-80 sm:w-[500px] border border-[#0a4447] p-2 rounded'
-                placeholder='Oluwatobiloba'
+                placeholder='Bhadmus'
                 type='text'
                 name='surName'
                 id='surName'
@@ -89,7 +89,7 @@ const Personal = () => {
               <div>
                 <input
               className='text-[#0a4447] w-80 sm:w-[1075px] border border-[#0a4447] p-2 rounded'
-              placeholder='Block 10, Adeyemi Street, Ikeja, Lagos State.'
+              placeholder='Block 10, Mirabel Street, Texas, Lagos State.'
               value={personalData.address}
               type='text'
               name='address'
@@ -157,7 +157,7 @@ const Personal = () => {
               <div>
               <input
                 className='text-[#0a4447] w-80 sm:w-[500px] border border-[#0a4447] p-2 rounded'
-                placeholder=' +2349040396645'
+                placeholder=' +234 012 345 6789'
                 type='number'
                 name='phoneNumber'
                 id='phoneNumber'
@@ -169,7 +169,7 @@ const Personal = () => {
             </div>
           </div>
 
-          <div className='pl-24 sm:pt-4 sm:pl-[900px]'>
+          <div className='pl-[85px] sm:pt-4 sm:pl-[840px]'>
             <button
               className='rounded-[10px] p-[6px] bg-white m-2 text-[#0a4447] sm:text-1xl border border-slate-300 hover:border-slate-400'
               onClick={() => navigate('/dashboard')}

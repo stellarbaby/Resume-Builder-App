@@ -22,7 +22,7 @@ import Navbar from './Navbar'
         </div>
 
 
-    <div className='sm:p-16 bg-[#f6f5f0] text-white sm:h-[550px] w-[400px] sm:w-[1200px] sm:pt-2 text-center sm:flex flex-row font-sans md:font-serif'>
+    <div className='sm:p-16 bg-gradient-to-r from-[#e6e5e9] via-white to-[#ede2db] text-white sm:h-[550px] w-[400px] sm:w-[1200px] sm:pt-2 text-center sm:flex flex-row font-sans md:font-serif'>
 
        <img className='pl-10 pt-2 sm:pt-4 sm:pl-1' src='https://assets.myperfectcv.co.uk/blobimages/mpintl-lp/muk/images/cv.png'/>
         

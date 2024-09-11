@@ -10,7 +10,7 @@ const About = () => {
   return (
     <div>
   
-<div className='p-10 sm:pb-16 bg-[#0a4447] text-white h-[580px] w-[400px] sm:w-[1200px] text-center'>
+<div className='p-10 sm:pb-16 bg-gradient-to-r from-cyan-900 via-[#496267] to-[#0a4447] text-white h-[580px] w-[400px] sm:w-[1200px] text-center'>
 
 <h1 className='bg-[#ede2db] mt-4 text-2xl sm:text-4xl inline-block text-transparent bg-clip-text'>This is a project built with knowledge on HTML, CSS, TailwindCSS, JavaScript, React and React Router.</h1>
 <h2 className='sm:pt-4 font-black sm:text-3xl bg-gradient-to-r from-[#8ef7ee] via-white to-[#baf1e9]
