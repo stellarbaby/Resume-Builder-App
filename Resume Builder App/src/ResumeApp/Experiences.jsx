@@ -35,7 +35,7 @@ const Experiences = () => {
     }};
 
   return (
-    <div className='bg-[#0a4447] text-white h-[600px] w-[350px] sm:w-[1200px]'>
+    <div className='bg-gradient-to-r from-cyan-900 via-[#496267] to-[#0a4447] text-white h-[600px] w-[350px] sm:w-[1200px]'>
       
       <div>
       <button className='pl-4' onClick={() => navigate('/dashboard')}>
@@ -89,7 +89,7 @@ const Experiences = () => {
         <div></div>
         <input 
         className='text-[#0a4447] w-80 sm:w-[500px] border border-[#0a4447] p-2 rounded'
-        placeholder='e.g. San Franciso'
+        placeholder='e.g. Lagos'
         id='city'
         name='city'
         type='text'
@@ -100,11 +100,11 @@ const Experiences = () => {
         </div>
 
         <div>
-        <label htmlFor='state'>State</label>
+        <label htmlFor='state'>Job responsibilities</label>
         <div></div>
         <input 
         className='text-[#0a4447] w-80 sm:w-[500px] border border-[#0a4447] p-2 rounded'
-        placeholder='e.g. California'
+        placeholder='e.g. Here, I am in charge of drafting legal documents.....'
         id='state'
         name='state'
         type='text'

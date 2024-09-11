@@ -39,7 +39,7 @@ const Personal = () => {
   };
 
   return (
-    <div className='bg-[#0a4447] text-white h-[620px] w-[350px] sm:w-[1200px]'>
+    <div className='bg-gradient-to-r from-cyan-900 via-[#496267] to-[#0a4447] text-white h-[620px] w-[350px] sm:w-[1200px]'>
       <div>
         <button className='pl-4' onClick={() => navigate('/dashboard')}>
           DASHBOARD
@@ -158,7 +158,7 @@ const Personal = () => {
               <input
                 className='text-[#0a4447] w-80 sm:w-[500px] border border-[#0a4447] p-2 rounded'
                 placeholder='e.g. +2349040396645'
-                type='number'
+                type='text'
                 name='phoneNumber'
                 id='phoneNumber'
                 required
@@ -169,7 +169,7 @@ const Personal = () => {
             </div>
           </div>
 
-          <div className='pl-24 sm:pt-14 sm:pl-[900px]'>
+          <div className='pl-24 sm:pt-4 sm:pl-[900px]'>
             <button
               className='rounded-[10px] p-[6px] bg-white m-2 text-[#0a4447] sm:text-1xl border border-slate-300 hover:border-slate-400'
               onClick={() => navigate('/dashboard')}

@@ -38,7 +38,7 @@ const Education = () => {
   };
 
   return (
-    <div className='bg-[#0a4447] text-white h-[600px] w-[350px] sm:w-[1200px]'>
+    <div className='bg-gradient-to-r from-cyan-900 via-[#496267] to-[#0a4447] text-white h-[600px] w-[350px] sm:w-[1200px]'>
       
       <div>
         <button className='pl-4' onClick={() => navigate('/dashboard')}>
