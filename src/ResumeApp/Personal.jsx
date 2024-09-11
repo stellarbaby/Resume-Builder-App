@@ -9,7 +9,7 @@ const Personal = () => {
     surName: '',
     address: '',
     city: '',
-    country: '',
+    gender: '',
     emailAddress: '',
     phoneNumber: '',
   });
@@ -28,7 +28,7 @@ const Personal = () => {
       personalData.surName &&
       personalData.address &&
       personalData.city &&
-      personalData.country &&
+      personalData.gender &&
       personalData.emailAddress &&
       personalData.phoneNumber
     ) {
@@ -47,8 +47,8 @@ const Personal = () => {
       </div>
 
       <div className='pl-4 sm:pl-14 sm:pt-10'>
-        <h1 className='text-1xl sm:text-5xl font-bold'>COMPLETE YOUR RESUME HEADING</h1>
-        <h2 className='text-1xl sm:text-4xl font-bold'>
+        <h1 className='font-Ubuntu text-1xl sm:text-5xl font-bold'>COMPLETE YOUR RESUME HEADING</h1>
+        <h2 className='font-Ubuntu text-1xl sm:text-4xl font-bold'>
           Employers will use this information to contact you.
         </h2>
 
@@ -61,7 +61,7 @@ const Personal = () => {
                 type='text'
                 name='firstName'
                 id='firstName'
-                placeholder='e.g. Stellar'
+                placeholder='Stellar'
                 value={personalData.firstName}
                 onChange={handleChange}
                 required
@@ -73,7 +73,7 @@ const Personal = () => {
               <div>
               <input
                 className='text-[#0a4447] w-80 sm:w-[500px] border border-[#0a4447] p-2 rounded'
-                placeholder='e.g. Oluwatobiloba'
+                placeholder='Oluwatobiloba'
                 type='text'
                 name='surName'
                 id='surName'
@@ -90,7 +90,7 @@ const Personal = () => {
               <div>
                 <input
               className='text-[#0a4447] w-80 sm:w-[1075px] border border-[#0a4447] p-2 rounded'
-              placeholder='e.g. Block 10, Adeyemi Street, Ikeja, Lagos State.'
+              placeholder='Block 10, Adeyemi Street, Ikeja, Lagos State.'
               value={personalData.address}
               type='text'
               name='address'
@@ -107,7 +107,7 @@ const Personal = () => {
               <div>
               <input
                 className='text-[#0a4447] w-80 sm:w-[500px] border border-[#0a4447] p-2 rounded'
-                placeholder='e.g. Nigeria'
+                placeholder='Nigeria'
                 value={personalData.city}
                 type='text'
                 name='city'
@@ -119,19 +119,20 @@ const Personal = () => {
             </div>
 
             <div>
-              <label htmlFor='country'>Gender</label>
-              <div>
-              <input
-                className='text-[#0a4447] w-80 sm:w-[500px] border border-[#0a4447] p-2 rounded'
-                placeholder='e.g. Female'
-                value={personalData.country}
-                type='text'
-                name='country'
-                id='country'
-                onChange={handleChange}
-                required
-              />
-              </div>
+            <label htmlFor='gender'>Gender</label>
+           <div>
+           <select
+              className='text-[#0a4447] w-80 sm:w-[500px] border border-[#0a4447] p-2 rounded'
+                id='gender' 
+              name='gender'
+              value={personalData.gender}
+               onChange={handleChange}
+               required
+                  >
+            <option value='female'>Female</option>
+              <option value='male'>Male</option>
+              </select>
+             </div>
             </div>
           </div>
 
@@ -141,7 +142,7 @@ const Personal = () => {
               <div>
               <input
                 className='text-[#0a4447] w-80 sm:w-[500px] border border-[#0a4447] p-2 rounded'
-                placeholder='e.g. stellarcryptos@gmail.com'
+                placeholder=' stellarcryptos@gmail.com'
                 type='text'
                 name='emailAddress'
                 id='emailAddress'
@@ -157,7 +158,7 @@ const Personal = () => {
               <div>
               <input
                 className='text-[#0a4447] w-80 sm:w-[500px] border border-[#0a4447] p-2 rounded'
-                placeholder='e.g. +2349040396645'
+                placeholder=' +2349040396645'
                 type='text'
                 name='phoneNumber'
                 id='phoneNumber'

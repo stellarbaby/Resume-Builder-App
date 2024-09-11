@@ -22,13 +22,13 @@ const Dashboard = () => {
       <div className='font-bold bg-gradient-to-r from-[#ede2db] via-white to-[#baf1e9] text-white h-[1450px] sm:h-[600px] w-[400px] sm:w-[1200px]'>
             
           <div className='text-center'>
-        <h1 className='bg-[#0a4447] mt-4 sm:py-4 text-2xl sm:text-5xl inline-block text-transparent bg-clip-text'>Building a perfect resume has never been this easy!</h1>
+        <h1 className='font-Ubuntu bg-[#0a4447] mt-4 sm:py-4 text-2xl sm:text-5xl inline-block text-transparent bg-clip-text'>Building a perfect resume has never been this easy!</h1>
         
-        <h2 className='bg-[#0a4447] mt-4 text-2xl sm:pb-4 sm:text-4xl inline-block text-transparent bg-clip-text'> How would you like to build your Resume?</h2>
+        <h2 className='font-Ubuntu bg-[#0a4447] mt-4 text-2xl sm:pb-4 sm:text-4xl inline-block text-transparent bg-clip-text'> How would you like to build your Resume?</h2>
         
         </div>
 
-        <div className='sm:pt-[10px] sm:text-2xl text-center grid grid-cols-1 md:grid-cols-4 sm:gap-[20px] font-bold'>
+        <div className='font-Ubuntu sm:pt-[10px] sm:text-2xl text-center grid grid-cols-1 md:grid-cols-4 sm:gap-[20px] font-bold'>
         
         <div className=''>
         <Link to='/personal'><h1 className='transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-[#085d60] duration-300 sm:inline-block bg-[#0a4447] text-white mt-[20px] sm:mt-[10px] px-6 py-2 rounded-md'>
@@ -58,7 +58,7 @@ const Dashboard = () => {
         </div>
 
         <div className='pt-2 sm:pt-8 text-center'>
-         <h1 className='font-black text-3xl sm:text-6xl bg-gradient-to-r from-[#496267] via-[#085d60] to-[#baf1e9]
+         <h1 className='font-Ubuntu font-black text-3xl sm:text-6xl bg-gradient-to-r from-[#496267] via-[#085d60] to-[#baf1e9]
          inline-block text-transparent bg-clip-text'>Just Four Simple Steps</h1>
         </div>
 

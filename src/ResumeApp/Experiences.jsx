@@ -20,19 +20,20 @@ const Experiences = () => {
      });
   };
 
-  const handleSubmit = () => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     if (
       experiences.employer &&
       experiences.jobTitle &&
       experiences.city &&
       experiences.state
-
     ) {
-      navigate ('/skills') 
+      navigate('/skills');
     } else {
-      alert ('Please fill in all required fields');
-    }};
+      alert('Please fill in all required fields');
+    }
+  };
+  
 
   return (
     <div className='bg-gradient-to-r from-cyan-900 via-[#496267] to-[#0a4447] text-white h-[600px] w-[350px] sm:w-[1200px]'>
@@ -45,20 +46,20 @@ const Experiences = () => {
 
 <div className='pt-4 pl-2 sm:p-14'>
         <h1 className='text-2xl sm:text-6xl font-bold'>EXPERIENCES</h1>
-        <h2 className='sm:text-2xl font-bold'>List your work experience, from the most recent to the oldest.</h2>
+        <h2 className='font-Ubuntu sm:text-2xl font-bold'>List your work experience, from the most recent to the oldest.</h2>
 
         <div>
-          <p>Feel free to use our pre-written examples.</p>
+          <p className='font-Ubuntu'>Feel free to use our pre-written examples.</p>
         </div>
 
  <form onSubmit={handleSubmit}>
 <div>   
 <div className='md:grid grid-cols-2 sm:pt-[40px]'>
         <div>
-        <label htmlFor='employer'>Former Company</label>
+        <label htmlFor='employer'>Name of Company</label>
         <input 
         className='text-[#0a4447] w-80 sm:w-[500px] border border-[#0a4447] p-2 rounded'
-        placeholder='e.g. Beloxxi Company'
+        placeholder='Beloxxi Company'
         name='employer'
         id='employer'
         type='text'
@@ -72,7 +73,7 @@ const Experiences = () => {
         <label htmlFor='jobTitle'>Job title</label>
         <input 
         className='text-[#0a4447] w-80 sm:w-[500px] border border-[#0a4447] p-2 rounded'
-        placeholder='e.g. Legal counsel'
+        placeholder='Legal counsel'
         type='text'
         name='jobTitle'
         id='jobTitle'
@@ -89,7 +90,7 @@ const Experiences = () => {
         <div></div>
         <input 
         className='text-[#0a4447] w-80 sm:w-[500px] border border-[#0a4447] p-2 rounded'
-        placeholder='e.g. Lagos'
+        placeholder='Lagos'
         id='city'
         name='city'
         type='text'
@@ -104,7 +105,7 @@ const Experiences = () => {
         <div></div>
         <input 
         className='text-[#0a4447] w-80 sm:w-[500px] border border-[#0a4447] p-2 rounded'
-        placeholder='e.g. Here, I am in charge of drafting legal documents.....'
+        placeholder='Here, I am in charge of drafting legal documents.....'
         id='state'
         name='state'
         type='text'
@@ -120,8 +121,8 @@ const Experiences = () => {
         <label htmlFor='startDate'>Start Date</label>
         <input 
         className='text-[#0a4447] w-80 sm:w-[500px] border border-[#0a4447] p-2 rounded'
-        placeholder='e.g. 27/01/2000'
-        type='text'
+        placeholder='27/01/2012'
+        type='date'
         id='startDate'
         name='startDate'
         value={experiences.startDate}
@@ -132,11 +133,11 @@ const Experiences = () => {
         <div>
         <label htmlFor='endDate'>End Date</label>
         <input 
-        type='text'
+        type='date'
         id='endDate'
         name='endDate'
         className='text-[#0a4447] w-80 sm:w-[500px] border border-[#0a4447] p-2 rounded'
-        placeholder='e.g. 31/12/2020'
+        placeholder='31/12/2020'
         value={experiences.endDate}
         onChange={handleChange}
         />

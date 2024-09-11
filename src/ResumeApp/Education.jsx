@@ -48,7 +48,7 @@ const Education = () => {
 
 <div className='pt-6 pl-2 sm:p-16'>
         <h1 className='text-2xl sm:text-6xl font-bold'>EDUCATION</h1>
-        <h2 className='text-1xl sm:text-4xl font-bold'>Add information about your educational background.</h2>
+        <h2 className='font-Ubuntu text-1xl sm:text-4xl font-bold'>Add information about your educational background.</h2>
 
 
 <form onSubmit={handleSubmit}>
@@ -57,7 +57,7 @@ const Education = () => {
         <label htmlFor='schoolName'>Institution name</label>
         <input 
         className='text-[#0a4447] w-80 sm:w-[500px] border border-[#0a4447] p-2 rounded'
-        placeholder='e.g. Harvard University'
+        placeholder='Harvard University'
         type='text'
         name='schoolName'
         id='schoolName'
@@ -72,7 +72,7 @@ const Education = () => {
         <div></div>
         <input 
         className='text-[#0a4447] w-80 sm:w-[500px] border border-[#0a4447] p-2 rounded'
-        placeholder='e.g. California'
+        placeholder='California'
         type='text'
         name='state'
         id='state'
@@ -89,7 +89,7 @@ const Education = () => {
         <div></div>
         <input 
         className='text-[#0a4447] w-80 sm:w-[500px] border border-[#0a4447] p-2 rounded'
-        placeholder='e.g. Lagos'
+        placeholder='Lagos'
         type='text'
         name='city'
         id='city'
@@ -103,7 +103,7 @@ const Education = () => {
         <label htmlFor='nationality'>Country</label>
         <input 
         className='text-[#0a4447] w-80 sm:w-[500px] border border-[#0a4447] p-2 rounded'
-        placeholder='e.g. Nigeria'
+        placeholder='Nigeria'
         type='text'
         name='nationality'
         id='nationality'
@@ -119,7 +119,7 @@ const Education = () => {
         <label htmlFor='fieldOfStudy'>Field of Study</label>
         <input 
         className='text-[#0a4447] w-80 sm:w-[500px] border border-[#0a4447] p-2 rounded'
-        placeholder='e.g. Law'
+        placeholder='Law'
         type='text'
         name='fieldOfStudy'
         id='fieldOfStudy'
@@ -133,7 +133,7 @@ const Education = () => {
         <label htmlFor='degree'>Honours</label>
         <input 
         className='text-[#0a4447] w-80 sm:w-[500px] border border-[#0a4447] p-2 rounded'
-        placeholder='e.g. LL.B Honors'
+        placeholder='LL.B Honors'
         name='degree'
         id='degree'
         value={education.degree}

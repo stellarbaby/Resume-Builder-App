@@ -44,7 +44,7 @@ return (
 
     <div className='pt-2 pl-2 sm:p-16'>
       <h1 className='text-2xl sm:text-6xl font-bold'>SKILLS</h1>
-      <h2 className='text-1xl sm:text-4xl font-bold'>Highlight 6-8 of your top skills.</h2>
+      <h2 className='font-Ubuntu text-1xl sm:text-4xl font-bold'>Highlight 6-8 of your top skills.</h2>
 
     <form onSubmit={handleSubmit}>
      <div className='md:grid grid-cols-2 pt-4 sm:pt-[40px]'>
@@ -58,7 +58,7 @@ return (
       value={skills.skill1}
       required
       className='text-[#0a4447] w-80 sm:w-[500px] border border-[#0a4447] p-2 rounded'
-      placeholder='e.g. Legal Research'
+      placeholder='Legal Research'
       onChange={handleChange}
       />
       </div>
@@ -89,7 +89,7 @@ return (
       id='skill2'
       value={skills.skill2}
       className='text-[#0a4447] w-80 sm:w-[500px] border border-[#0a4447] p-2 rounded'
-      placeholder='e.g. Product Management'
+      placeholder='Product Management'
       onChange={handleChange}
       />
       </div>
@@ -119,7 +119,7 @@ return (
       id='skill3'
       value={skills.skill3}
       className='text-[#0a4447] w-80 sm:w-[500px] border border-[#0a4447] p-2 rounded'
-      placeholder='e.g. HTML'
+      placeholder='HTML'
       onChange={handleChange}
       />
       </div>
