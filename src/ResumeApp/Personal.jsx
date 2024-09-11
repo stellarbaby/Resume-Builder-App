@@ -28,7 +28,6 @@ const Personal = () => {
       personalData.surName &&
       personalData.address &&
       personalData.city &&
-      personalData.gender &&
       personalData.emailAddress &&
       personalData.phoneNumber
     ) {
@@ -127,7 +126,6 @@ const Personal = () => {
               name='gender'
               value={personalData.gender}
                onChange={handleChange}
-               required
                   >
             <option value='female'>Female</option>
               <option value='male'>Male</option>
