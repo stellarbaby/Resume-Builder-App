@@ -127,6 +127,7 @@ const Personal = () => {
               value={personalData.gender}
                onChange={handleChange}
                   >
+            <option value='other'>Select</option>
             <option value='female'>Female</option>
               <option value='male'>Male</option>
               </select>
@@ -140,7 +141,7 @@ const Personal = () => {
               <div>
               <input
                 className='text-[#0a4447] w-80 sm:w-[500px] border border-[#0a4447] p-2 rounded'
-                placeholder=' stellarcryptos@gmail.com'
+                placeholder=' example@gmail.com'
                 type='text'
                 name='emailAddress'
                 id='emailAddress'
@@ -157,7 +158,7 @@ const Personal = () => {
               <input
                 className='text-[#0a4447] w-80 sm:w-[500px] border border-[#0a4447] p-2 rounded'
                 placeholder=' +2349040396645'
-                type='text'
+                type='number'
                 name='phoneNumber'
                 id='phoneNumber'
                 required

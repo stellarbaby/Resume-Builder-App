@@ -11,8 +11,9 @@ import NotFound from './ResumeApp/NotFound'
 import About from './ResumeApp/About'
 
 function App() {
-
+ 
   return (
+  
 <BrowserRouter>
   <Routes>
       <Route path='/' element={<LandingPage />}></Route>
@@ -22,9 +23,7 @@ function App() {
       <Route path='/personal' element={<Personal />}></Route>
       <Route path='/skills' element={<Skills />}></Route>
       <Route path='/about' element={<About />}></Route>
-      <Route path='*' element={<NotFound />}></Route>
-
-  
+      <Route path='*' element={<NotFound />}></Route>  
   </Routes>
 </BrowserRouter>
 
